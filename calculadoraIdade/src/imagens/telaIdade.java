@@ -110,14 +110,20 @@ public class telaIdade extends javax.swing.JFrame {
 
     private void btnCalcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcActionPerformed
         // TODO add your handling code here:
+       Calendar calendar = Calendar.getInstance();
+        int ano = calendar.get(Calendar.YEAR);
+        
         int an = Integer.parseInt(txtAN.getValue().toString());
-        int id = 2022 - an;
+        int id = ano - an;
         lblIdade.setText(Integer.toString(id));
+   
     }//GEN-LAST:event_btnCalcActionPerformed
 
     private void lblAnoAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_lblAnoAncestorAdded
         // TODO add your handling code here:
-
+        Calendar calendar = Calendar.getInstance();
+        int ano = calendar.get(Calendar.YEAR);
+        lblAno.setText(Integer.toString(ano));  
     }//GEN-LAST:event_lblAnoAncestorAdded
 
     /**
