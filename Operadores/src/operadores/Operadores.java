@@ -21,10 +21,21 @@ public class Operadores {
         System.out.println("A média é igual a " + m);
         
         
+        // usei o type cast para resolver o problema
+        // calculo da raiz quadrada
         
+        float res = (float) Math.sqrt(n1);
         
+        System.out.println(res);
         
+        // numero aleatorio entre 0.0 - 1.0
+        double ale = Math.random();
+        System.out.println(ale);
         
+        // aleatorio inteiro 5 - 10
+        int n = (int)(5 + ale * (10-5));
+        System.out.println(n);
+         
     }
     
 }
