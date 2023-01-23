@@ -7,8 +7,17 @@ public class App {
     public String getGreeting() {
         return "Hello World!";
     }
-
+// comentário de linha
     public static void main(String[] args) {
         System.out.println("Ola mundo");
     }
+    /*
+    Bloco de comentario 
+    de varias linhas
+    
+    */
+    
+    /**
+     * comentário de documentação
+     */
 }
